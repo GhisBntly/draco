@@ -20,6 +20,8 @@ set(DRACO_CMAKE_DRACO_FLAGS_CMAKE_ 1)
 include(CheckCXXCompilerFlag)
 include(CheckCXXSourceCompiles)
 
+add_definitions(-DEIGEN_MPL2_ONLY)
+
 # Adds compiler flags specified by FLAGS to the sources specified by SOURCES:
 #
 # draco_set_compiler_flags_for_sources(SOURCES <sources> FLAGS <flags>)
